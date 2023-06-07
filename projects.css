@@ -25,10 +25,40 @@ h1 {
     color: rgb(255, 255, 255);
     padding: 0 30px;
 }
-p {
-    border: 1px solid rgb(58, 58, 58);
-    font-family: 'Courier New', Courier, monospace;
-    color: rgb(255, 255, 255);
-    font-size: 24px;
-    padding: 0 30px;
+
+.image-container img {
+    text-align: center;
+
+    position: relative;
+    display: inline-block;
+    width: 200px; 
+    height: auto;
+}
+
+
+.text-overlay {
+    position: absolute;
+    top: 0;
+    margin-top: 190px;
+    width: 200px; 
+    height: 310px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    opacity: 0;
+    transition: opacity 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.image-container:hover .text-overlay {
+    opacity: 1;
+}
+
+.text-overlay p {
+    text-align: center;
+    font-size: 18px;
+    padding: 10px;
+    
 }
