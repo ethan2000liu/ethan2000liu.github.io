@@ -43,3 +43,9 @@ nav {
     margin:0;
     padding:0;
 }
+
+.custom-link {
+    font-family: Arial, sans-serif;
+    /* Additional styles can be added here */
+    color: white;
+}
