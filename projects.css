@@ -74,12 +74,14 @@ nav {
 
 
 .image-container:nth-child(3) {
-    top: 25%;
+    padding-top: 90px;
+    top: 10%;
     left: 75%;
 }
 
 .image-container:nth-child(4) {
-    top: 25%;
+    padding-top: 90px;
+    top: 10%;
     left: 25%;
 }
 .image-container {
