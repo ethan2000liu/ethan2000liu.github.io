@@ -26,22 +26,42 @@ h1 {
     padding: 0 30px;
 }
 
-.image-container img {
-    text-align: center;
 
-    position: relative;
-    display: inline-block;
-    width: 200px; 
-    height: auto;
+nav {
+    width:100%;
+    height: 100px;
+    background-color: #2c4047ec;
+
 }
 
+*{
+    margin:0;
+    padding:0;
+}
+.image-container:hover .text-overlay {
+    opacity: 1;
+}
+
+.text-overlay p {
+    text-align: center;
+    font-size: 18px;
+    padding: 10px;
+    
+}
+
+
+.image-container img {
+    width: 300px;
+    height: 450px;
+    display: block;
+}
 
 .text-overlay {
     position: absolute;
     top: 0;
-    margin-top: 190px;
-    width: 200px; 
-    height: 310px;
+    left: 0;
+    width: 100%;
+    height: 100%;
     background-color: rgba(0, 0, 0, 0.8);
     color: #fff;
     opacity: 0;
@@ -52,13 +72,18 @@ h1 {
 }
 
 
-.image-container:hover .text-overlay {
-    opacity: 1;
+
+.image-container:nth-child(3) {
+    top: 25%;
+    left: 75%;
 }
 
-.text-overlay p {
-    text-align: center;
-    font-size: 18px;
-    padding: 10px;
-    
+.image-container:nth-child(4) {
+    top: 25%;
+    left: 25%;
+}
+.image-container {
+    position: absolute;
+    display: inline-block;
+
 }
