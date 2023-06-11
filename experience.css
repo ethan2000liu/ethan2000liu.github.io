@@ -43,3 +43,40 @@ nav {
     margin:0;
     padding:0;
 }
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200vh;
+
+}
+
+.item-list {
+    display: flex;
+    flex-direction: column; /* Display items in a vertical column */
+    align-items: center; /* Center items horizontally within the column */
+}
+
+.item {
+    width: 600px;
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 100px; /* Add margin between items */
+}
+
+.item:last-child {
+    margin-bottom: 0; /* Remove margin from the last item */
+}
+
+.item-title {
+    font-size: 20px;
+    margin-top: 0;
+}
+
+.item-description {
+    margin-bottom: 0;
+    color: blue;
+
+}
+
